@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ac5142711bf84fa18ca70fbb086fb674" Name="Diagram1">
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.Customer" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.Order_Products" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.Order" Width="1.5" PointX="3" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.Product" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.ShoppingCartData" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectricsOnlineWebAppModel.Supplier" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="ElectricsOnlineWebAppModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectricsOnlineWebAppModel.FK_Order_Products_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectricsOnlineWebAppModel.FK_Order_Products_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectricsOnlineWebAppModel.FK_Products_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

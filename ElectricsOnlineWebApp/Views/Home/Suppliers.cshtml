@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Suppliers";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Suppliers</h2>
+
+@if (ViewBag.Suppliers.Count == 0)
+{
+    <br />
+    <div id="EmptyDataMsg" class="alert alert-info">
+        <strong>Welcome!</strong> Our shop supppliers is currently empty.
+    </div>
+}
+
+<div class="row">
+    @foreach (var item in ViewBag.Suppliers)
+    {
+        <div class="col-md-3">
+            <div class="card list-item" style="width: 100%; height: 180px;">
+                <img src="@String.Format("{0}{1}.jpg",Url.Content("~/Images/Suppliers/"), item.SName)" class="card-img-top list-img" alt="@item.SName" /><br />
+                <div class="card-body">
+                    <span class="p-cart"><b>@item.SName</b></span> -
+                    <span class="email">@item.Email</span> <br />
+                    <span class="phone">Phone: @item.Phone</span>
+                    <div class="address">
+                        <span>@item.Address1</span>
+                        <span>@item.Suburb</span>
+                        <span>@item.State</span>
+                        <span>@item.Postcode</span>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    }
+</div>
+
